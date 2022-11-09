@@ -475,6 +475,22 @@ body {
   padding: 12px 16px;
 
   resize: none;
+
+  transition: border-color var(--transition);
+}
+
+.section.hero .modal-text {
+  position: relative;
+}
+
+.section.hero .icon {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(12px, -11px);
+  fill: #212121;
+
+  transition: fill var(--transition);
 }
 
 .section.hero .modal-feedback::placeholder {
@@ -483,6 +499,18 @@ body {
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
+}
+
+.section.hero .modal-input:hover + .icon,
+.section.hero .modal-input:focus + .icon {
+  fill: var(--hover-focus-button);
+}
+
+.section.hero .modal-input:hover,
+.section.hero .modal-input:focus,
+.section.hero .modal-feedback:hover,
+.section.hero .modal-feedback:focus {
+  border-color: var(--hover-focus-button);
 }
 
 .section.hero .falce-checkbox {
@@ -575,28 +603,6 @@ body {
   border: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-}
-
-.section.hero .modal-text {
-  position: relative;
-}
-
-.section.hero .icon {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transform: translate(12px, -11px);
-  fill: #212121;
-
-  transition: fill var(--transition);
-}
-
-.section.hero .modal-input:focus + .icon {
-  fill: var(--hover-focus-button);
-}
-
-.section.hero .modal-input:focus {
-  border-color: var(--hover-focus-button);
 }
 
 .section.hero .push-close {
