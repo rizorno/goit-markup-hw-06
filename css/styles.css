@@ -536,6 +536,10 @@ body {
   margin-right: 7px;
 
   overflow: hidden;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .falce-checkbox .link-checkbox {
@@ -576,6 +580,10 @@ body {
   border: 0;
   clip: rect(0 0 0);
   overflow: hidden;
+
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .input-checkbox:focus + .icon-true {
